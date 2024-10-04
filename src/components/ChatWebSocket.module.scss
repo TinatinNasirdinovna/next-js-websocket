@@ -1,0 +1,82 @@
+.ChatWebSocket {
+  .ChatWebSocketContent {
+    padding: 0px 10px;
+    position: relative;
+    background: rgba(19, 18, 18, 0.925);
+    display: flex;
+    .content {
+      width: 60%;
+      padding: 0px 0;
+      h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        border-bottom: 1px solid white;
+        padding: 14px;
+        position: sticky;
+        top: 0;
+        margin-bottom: 20px;
+        background: rgba(19, 18, 18, 0.849);
+      }
+      .sendingMess {
+        background-color: rgb(65, 170, 170);
+        padding: 20px 30px;
+        border-radius: 20px;
+        position: fixed;
+        width: 50%;
+        bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        input {
+            width: 70%;
+            height: 40px;
+            color: black;
+            font-size: 20px;
+            padding: 10px 16px;
+            border: none;
+            outline: none;
+            border-radius: 12px;
+        }
+        button {
+            transition: .2s;
+            border: 2px solid white;
+            font-weight: 700;
+            font-style: 20px;
+            padding: 5px 16px;
+            border-radius: 12px;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+      }
+      .messContent {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0 200px 0;
+        .message {
+          display: flex;
+          gap: 10px;
+          align-items: flex-end;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+          .messageContent {
+            background: rgb(44, 43, 39);
+            padding: 5px 20px 5px 10px;
+            border-radius: 19px;
+            border-bottom-left-radius: 0;
+            h3 {
+                font-size: 15px;
+                color: aqua;
+                margin-bottom: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
